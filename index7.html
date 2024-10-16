@@ -1,0 +1,2393 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tree</title>
+  <link rel="icon" href="https://fav.farm/🌀" />
+
+  <link rel="stylesheet" href="./style.css">
+<style>
+  *,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #050505;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fir {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.fir:nth-child(1) {
+  background: #00c746;
+  width: 5px;
+  height: 5px;
+  top: 76.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00c746, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00c746, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00c746, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00c746, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 39;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(2) {
+  background: #00c249;
+  width: 10px;
+  height: 10px;
+  top: 83px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00c249, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00c249, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00c249, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00c249, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 38;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(3) {
+  background: #00bd4b;
+  width: 15px;
+  height: 15px;
+  top: 89.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00bd4b, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00bd4b, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00bd4b, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00bd4b, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 37;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(4) {
+  background: #00b84d;
+  width: 20px;
+  height: 20px;
+  top: 96px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00b84d, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00b84d, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00b84d, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00b84d, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 36;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(5) {
+  background: #00b34e;
+  width: 25px;
+  height: 25px;
+  top: 102.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00b34e, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00b34e, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00b34e, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00b34e, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 35;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(6) {
+  background: #00ad4f;
+  width: 30px;
+  height: 30px;
+  top: 109px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00ad4f, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00ad4f, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00ad4f, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00ad4f, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 34;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(7) {
+  background: #00a851;
+  width: 35px;
+  height: 35px;
+  top: 115.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00a851, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00a851, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00a851, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00a851, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 33;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(8) {
+  background: #00a352;
+  width: 40px;
+  height: 40px;
+  top: 122px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00a352, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00a352, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00a352, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00a352, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 32;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(9) {
+  background: #009e52;
+  width: 45px;
+  height: 45px;
+  top: 128.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#009e52, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#009e52, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#009e52, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#009e52, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 31;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(10) {
+  background: #009953;
+  width: 50px;
+  height: 50px;
+  top: 135px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#009953, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#009953, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#009953, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#009953, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 30;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(11) {
+  background: #009453;
+  width: 55px;
+  height: 55px;
+  top: 141.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#009453, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#009453, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#009453, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#009453, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 29;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(12) {
+  background: #008f53;
+  width: 60px;
+  height: 60px;
+  top: 148px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#008f53, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#008f53, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#008f53, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#008f53, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 28;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(13) {
+  background: #008a53;
+  width: 65px;
+  height: 65px;
+  top: 154.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#008a53, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#008a53, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#008a53, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#008a53, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 27;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(14) {
+  background: #008553;
+  width: 70px;
+  height: 70px;
+  top: 161px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#008553, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#008553, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#008553, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#008553, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 26;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(15) {
+  background: #008052;
+  width: 75px;
+  height: 75px;
+  top: 167.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#008052, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#008052, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#008052, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#008052, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 25;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(16) {
+  background: #007a52;
+  width: 80px;
+  height: 80px;
+  top: 174px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#007a52, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#007a52, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#007a52, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#007a52, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 24;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(17) {
+  background: #007551;
+  width: 85px;
+  height: 85px;
+  top: 180.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#007551, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#007551, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#007551, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#007551, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 23;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(18) {
+  background: #00704f;
+  width: 90px;
+  height: 90px;
+  top: 187px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00704f, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00704f, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00704f, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00704f, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 22;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(19) {
+  background: #006b4e;
+  width: 95px;
+  height: 95px;
+  top: 193.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#006b4e, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#006b4e, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#006b4e, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#006b4e, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 21;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(20) {
+  background: #00664d;
+  width: 100px;
+  height: 100px;
+  top: 200px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00664d, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00664d, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00664d, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00664d, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 20;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(21) {
+  background: #00614b;
+  width: 105px;
+  height: 105px;
+  top: 206.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00614b, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00614b, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00614b, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00614b, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 19;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(22) {
+  background: #005c49;
+  width: 110px;
+  height: 110px;
+  top: 213px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#005c49, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#005c49, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#005c49, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#005c49, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 18;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(23) {
+  background: #005746;
+  width: 115px;
+  height: 115px;
+  top: 219.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#005746, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#005746, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#005746, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#005746, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 17;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(24) {
+  background: #005244;
+  width: 120px;
+  height: 120px;
+  top: 226px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#005244, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#005244, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#005244, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#005244, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 16;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(25) {
+  background: #004d41;
+  width: 125px;
+  height: 125px;
+  top: 232.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#004d41, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#004d41, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#004d41, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#004d41, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 15;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(26) {
+  background: #00473e;
+  width: 130px;
+  height: 130px;
+  top: 239px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00473e, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00473e, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00473e, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00473e, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 14;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(27) {
+  background: #00423b;
+  width: 135px;
+  height: 135px;
+  top: 245.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00423b, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00423b, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00423b, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00423b, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 13;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(28) {
+  background: #003d38;
+  width: 140px;
+  height: 140px;
+  top: 252px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#003d38, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#003d38, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#003d38, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#003d38, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 12;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(29) {
+  background: #003835;
+  width: 145px;
+  height: 145px;
+  top: 258.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#003835, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#003835, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#003835, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#003835, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 11;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(30) {
+  background: #003331;
+  width: 150px;
+  height: 150px;
+  top: 265px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#003331, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#003331, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#003331, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#003331, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 10;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(31) {
+  background: #002e2d;
+  width: 155px;
+  height: 155px;
+  top: 271.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#002e2d, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#002e2d, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#002e2d, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#002e2d, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 9;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(32) {
+  background: #002929;
+  width: 160px;
+  height: 160px;
+  top: 278px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#002929, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#002929, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#002929, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#002929, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 8;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(33) {
+  background: #002324;
+  width: 165px;
+  height: 165px;
+  top: 284.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#002324, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#002324, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#002324, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#002324, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 7;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(34) {
+  background: #001d1f;
+  width: 170px;
+  height: 170px;
+  top: 291px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#001d1f, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#001d1f, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#001d1f, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#001d1f, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 6;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(35) {
+  background: #00181a;
+  width: 175px;
+  height: 175px;
+  top: 297.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00181a, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00181a, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00181a, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00181a, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 5;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(36) {
+  background: #001314;
+  width: 180px;
+  height: 180px;
+  top: 304px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#001314, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#001314, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#001314, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#001314, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 4;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(37) {
+  background: #000e0f;
+  width: 185px;
+  height: 185px;
+  top: 310.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#000e0f, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#000e0f, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#000e0f, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#000e0f, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 3;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(38) {
+  background: #00090a;
+  width: 190px;
+  height: 190px;
+  top: 317px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#00090a, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#00090a, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#00090a, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#00090a, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 2;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(39) {
+  background: #000405;
+  width: 195px;
+  height: 195px;
+  top: 323.5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(#000405, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(#000405, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(#000405, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(#000405, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 1;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.fir:nth-child(40) {
+  background: black;
+  width: 200px;
+  height: 200px;
+  top: 330px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=5);
+  -webkit-box-shadow: 0px 0px 2px 0px ligthen(black, 5%);
+  -moz-box-shadow: 0px 0px 2px 0px ligthen(black, 5%);
+  -o-box-shadow: 0px 0px 2px 0px ligthen(black, 5%);
+  box-shadow: 0px 0px 2px 0px ligthen(black, 5%);
+  -webkit-animation: rotation 4.5s infinite linear;
+  animation: rotation 4.5s infinite linear;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  z-index: 0;
+}
+
+.fir:nth-child(n) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fir:nth-child(2n) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fir:nth-child(3n) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fir:nth-child(4n) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fir:nth-child(5n) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.tree {
+  background-color: #000000;
+  height: 44px;
+  width: 100px;
+  position: relative;
+  display: block;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="tree"/>
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div> 
+<div class="fir"></div></div>
+<!-- partial -->
+  <div style="text-align: center; color: green; margin: 300px;">
+    <h3>
+      (1 Pt 2:17-25) Honour all men. Love the brotherhood. Fear God. Honour the king. 18 Servants, be subject to your masters with all fear; not only to the good and gentle, but also to the froward. 19 For this is thankworthy, if a man for conscience toward God endure grief, suffering wrongfully. 20 For what glory is it, if, when ye be buffeted for your faults, ye shall take it patiently? but if, when ye do well, and suffer for it, ye take it patiently, this is acceptable with God. 21 For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his steps: 22 Who did no sin, neither was guile found in his mouth: 23 Who, when he was reviled, reviled not again; when he suffered, he threatened not; but committed himself to him that judgeth righteously: 24 Who his own self bare our sins in his own body on the <span style="color: lawngreen;">tree</span>, that we, being dead to sins, should live unto righteousness: by whose stripes ye were healed. 25 For ye were as sheep going astray; but are now returned unto the Shepherd and Bishop of your souls.
+    </h3>
+  </div>
+</body>
+</html>

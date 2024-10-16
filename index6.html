@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Conspiracy</title>
+  <link rel="icon" href="https://fav.farm/🌀" />
+
+  <link rel="stylesheet" href="./style.css">
+<style>
+  *{
+  transition:         all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+
+
+body {
+  background: #222222;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,100,400);
+
+
+#scroll, #main {
+  font-size: 48px;
+  font-family: 'Roboto Light', sans-serif;
+  color: white;
+}
+
+#main, #main a{
+  color:#000;
+  font-family: 'Bitter', serif;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  text-decoration:none;
+}
+
+
+html:hover #main a{
+  font-size:70px;
+  color:#fff;
+
+   margin-right:24px;
+}
+
+a:hover{border-bottom:74px solid #fff;
+border-radius:0.0em 0.0em 0.2em  0.2em ;
+}
+a:active{
+  box-shadow:-33px 02px 1px #000;
+}
+
+#main:after {
+  clear: both;
+}
+
+
+#scroll {
+  float: left;
+  transform: translate(-100%, 0);
+  margin-right: -100%;
+  height: 0;
+  margin-left:144px;
+}
+
+#scroll .item {
+  display: block;
+  text-shadow: 
+    0 0 8px #fff, 
+    0 -4px 2px #fff, 
+    0 4px 12px #fff, 
+    0 -8px 6px #000,
+    0 8px 06px #fff;
+  text-align: right;
+  position: relative;
+  margin: 0;
+}
+
+@-webkit-keyframes scrollanim {
+  0% {opacity: 0; top: 182px;}
+  25% {color: rgba(255, 255, 255, 0);}
+  40% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  60% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  75% {color: rgba(255, 255, 255, 0);}
+  100% {opacity: 0; top: -128px;}
+}
+
+@keyframes scrollanim {
+  0% {opacity: 0; top: 182px;}
+  25% {color: rgba(255, 255, 255, 0);}
+  40% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  60% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  75% {color: rgba(255, 255, 255, 0);}
+  100% {opacity: 0; top: -128px;}
+}
+</style>
+</head>
+<body>
+  <div style="text-align: center;color: white;">
+    <h1>
+      Depending on who you ask, you might not get the full story...
+    </h1>
+    <h3>
+      (Mt 28:11-15) 11 Now when they were going, behold, some of the watch came into the city, and shewed unto the chief priests all the things that were done. 12 And when they were assembled with the elders, and had taken counsel, they gave large money unto the soldiers, 13 Saying, Say ye, His disciples came by night, and stole him away while we slept. 14 And if this come to the governor’s ears, we will persuade him, and secure you. 15 So they took the money, and did as they were taught: and this saying is commonly reported among the Jews until this day.
+    </h3>
+  </div>
+<!-- partial:index.partial.html -->
+<span id="main"> <a  href="index7.html">&#201;L</a> 
+  <span id="scroll">
+    <span class="item">JO</span>
+    <span class="item">AB</span>
+    <span class="item">EZEKI</span>
+    <span class="item">DANI</span>
+    <span class="item">SAMU</span>
+    <span class="item">YAHSARAR</span>
+    <span class="item">EMMANU</span>
+    
+     <span class="item">MISHA</span>
+    
+    
+    
+  </span>
+  
+</span>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+
+    //alternatively for a non-JS approach: Set the animation and offset for each child manually.
+
+delay = 0.9;
+duration = $("#scroll .item").length * delay;
+
+$("#scroll .item").each(function(n) {
+  $(this).css("transform", "translateY(-"+(n*100)+"%)");
+  $(this).css("animation", "scrollanim "+duration+"s linear -"+(delay*n)+"s infinite");
+});
+  </script>
+
+</body>
+</html>
